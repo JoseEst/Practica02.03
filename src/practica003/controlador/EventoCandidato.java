@@ -74,13 +74,13 @@ public class EventoCandidato implements ActionListener
                 this.ventanaCandidato.setDatos(datoCandidato);
                 this.ventanaCandidato.getModeloTabla().setDataVector(this.ventanaCandidato.getDatos(), this.ventanaCandidato.getEncabezado());
                 
-                File ficheroCanton = new File("C:\\carpetaPractica03\\Candidato.txt");
+                File ficheroCandidato = new File("C:\\carpetaPractica03\\Candidato.txt");
                 
-                if (ficheroCanton.exists() == false)
+                if (ficheroCandidato.exists() == false)
                 {
                     try 
                     {
-                        ficheroCanton.createNewFile();
+                        ficheroCandidato.createNewFile();
 
                     } 
                     catch(Exception ae) 
@@ -92,8 +92,8 @@ public class EventoCandidato implements ActionListener
                 {
                     FileOutputStream ae = new FileOutputStream("C:\\carpetaPractica03\\Candidato.txt",false);
                     DataOutputStream b = new DataOutputStream(ae);
-                    
-                    b.writeUTF(c.toString());
+
+                    b.writeUTF(c.toString());     
                     b.close();
                 }
                 catch (Exception ae) 
