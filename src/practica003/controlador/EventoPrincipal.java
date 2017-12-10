@@ -7,6 +7,7 @@ package practica003.controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import practica003.vista.VentanaCandidato;
 import practica003.vista.VentanaPrincipal;
 
 /**
@@ -26,7 +27,10 @@ public class EventoPrincipal implements ActionListener
     {
        if (e.getSource().equals(this.VentPri.getMenuItemList().get(0))) 
         {
-            System.err.println("Agregar Ventana Candidato"); 
+            System.err.println("Agregar Ventana Candidato");
+            VentanaCandidato VenCan = new VentanaCandidato(this.VentPri.getGestionDato());
+            VenCan.setVisible(true);
+            this.VentPri.getEscritorio().add(VenCan);
           
         }
         
