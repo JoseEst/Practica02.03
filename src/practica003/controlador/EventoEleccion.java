@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica003;
+package practica003.controlador;
 
 /**
  *
  * @author Jose
  */
-public class Practica003 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class EventoEleccion {
     
 }
