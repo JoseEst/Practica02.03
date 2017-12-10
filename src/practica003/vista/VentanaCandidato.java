@@ -127,7 +127,7 @@ public class VentanaCandidato extends JInternalFrame
         
         this.encabezado = new Object[3];               
         this.encabezado[0] = "Nombre";
-        this.encabezado[1] = "Provincia";
+        this.encabezado[1] = "Edad";
         this.encabezado[2] = "Lista";
         
         this.datos = cargaDatosTabla(this.gestionDato.getCandidatoList().size(),3);
