@@ -150,7 +150,7 @@ public class VentanaEleccion extends JInternalFrame {
         
         panel.add(this.etiList.get(0));
         panel.add(this.txtList.get(0));
-        panel.add(this.txtList.get(0));
+        panel.add(this.botonList.get(0));
         
         panel.add(this.scroll);
         
