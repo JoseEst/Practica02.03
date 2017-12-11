@@ -62,7 +62,7 @@ public class EventoEleccion implements ActionListener {
                 this.ventanaEleccion.getModeloTabla().setDataVector(this.ventanaEleccion.getDatos(), this.ventanaEleccion.getEncabezado());
 
                 //Agregar Archivo Ubicacion
-                File ficheroParroquia = new File("C:\\carpetaPractica02\\Eleccion.txt");
+                File ficheroParroquia = new File("C:\\carpetaPractica03\\Eleccion.txt");
 
                 if (ficheroParroquia.exists() == false) {
 
