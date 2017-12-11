@@ -7,7 +7,9 @@ package practica003.controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import practica003.vista.VentanaCandidato;
+import practica003.vista.VentanaEleccion;
 import practica003.vista.VentanaPrincipal;
 
 /**
@@ -25,6 +27,12 @@ public class EventoPrincipal implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e) 
     {
+        
+        File carpeta = new File("C:\\carpetaPractica03");
+        if(carpeta.exists() == false) {
+            carpeta.mkdir();
+        }
+        
        if (e.getSource().equals(this.VentPri.getMenuItemList().get(0))) 
         {
             System.err.println("Agregar Ventana Candidato");
@@ -36,7 +44,10 @@ public class EventoPrincipal implements ActionListener
         
         if (e.getSource().equals(this.VentPri.getMenuItemList().get(1))) 
         {
-            System.err.println("Agregar Ventana Eleccion"); 
+            
+            VentanaEleccion vE = new VentanaEleccion(this.VentPri.getGestionDato());
+            vE.setVisible(true);
+            this.VentPri.getEscritorio().add(vE);
           
         }
         if (e.getSource().equals(this.VentPri.getMenuItemList().get(2))) 
