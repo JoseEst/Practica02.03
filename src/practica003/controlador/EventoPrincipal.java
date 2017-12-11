@@ -11,6 +11,7 @@ import java.io.File;
 import practica003.vista.VentanaCandidato;
 import practica003.vista.VentanaEleccion;
 import practica003.vista.VentanaPrincipal;
+import practica003.vista.VentanaResultado;
 
 /**
  *
@@ -52,7 +53,11 @@ public class EventoPrincipal implements ActionListener
         }
         if (e.getSource().equals(this.VentPri.getMenuItemList().get(2))) 
         {
-             System.err.println("Agregar Ventana Resultado"); 
+            System.err.println("Agregar Ventana Resultado"); 
+            VentanaResultado vR = new VentanaResultado(this.VentPri.getGestionDato());
+            vR.setVisible(true); 
+            this.VentPri.getEscritorio().add(vR);
+            
           
         }
     }

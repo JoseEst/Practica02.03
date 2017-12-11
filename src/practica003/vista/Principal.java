@@ -10,6 +10,7 @@ import java.util.List;
 import practica003.controlador.GestionDato;
 import practica003.modelo.Candidato;
 import practica003.modelo.Eleccion;
+import practica003.modelo.Resultado;
 
 /**
  *
@@ -24,7 +25,8 @@ public class Principal {
     {
         List<Candidato> candidato = new ArrayList<Candidato>();
         List<Eleccion> eleccion = new ArrayList<Eleccion>();
-        GestionDato gD = new GestionDato(candidato,eleccion);
+        List<Resultado> resultado = new ArrayList<Resultado>();
+        GestionDato gD = new GestionDato(candidato,eleccion,resultado);
         VentanaPrincipal VentPri = new VentanaPrincipal (gD);// TODO code application logic here
     }
     
