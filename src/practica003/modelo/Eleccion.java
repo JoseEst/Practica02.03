@@ -11,4 +11,23 @@ package practica003.modelo;
  */
 public class Eleccion {
     
+    private String fecha;
+
+    public Eleccion(String fecha) {
+        this.fecha = fecha;
+    } 
+    
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    @Override
+    public String toString() {
+        return fecha;
+    }
+    
 }

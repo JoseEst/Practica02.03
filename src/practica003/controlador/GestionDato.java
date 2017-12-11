@@ -7,6 +7,7 @@ package practica003.controlador;
 
 import java.util.List;
 import practica003.modelo.Candidato;
+import practica003.modelo.Eleccion;
 
 /**
  *
@@ -15,9 +16,11 @@ import practica003.modelo.Candidato;
 public class GestionDato {
     
     private List<Candidato> candidatoList;
+    private List<Eleccion> eleccionList;
 
-    public GestionDato(List<Candidato> candidatoList) {
+    public GestionDato(List<Candidato> candidatoList, List<Eleccion> eleccionList) {
         this.candidatoList = candidatoList;
+        this.eleccionList = eleccionList;
     }
 
     public List<Candidato> getCandidatoList() {
@@ -26,8 +29,21 @@ public class GestionDato {
     public void setCandidatoList(List<Candidato> candidatoList) {
         this.candidatoList = candidatoList;
     }
+
+    public List<Eleccion> getEleccionList() {
+        return eleccionList;
+    }
+
+    public void setEleccionList(List<Eleccion> eleccionList) {
+        this.eleccionList = eleccionList;
+    }
     
     public boolean addCandidato(Candidato candidato) {
         return this.candidatoList.add(candidato);
     }
+    
+    public boolean addEleccion(Eleccion eleccion) {
+        return this.eleccionList.add(eleccion);
+    }
+    
 }
