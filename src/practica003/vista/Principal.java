@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import practica003.controlador.GestionDato;
 import practica003.modelo.Candidato;
+import practica003.modelo.Eleccion;
 
 /**
  *
@@ -22,7 +23,8 @@ public class Principal {
     public static void main(String[] args) 
     {
         List<Candidato> candidato = new ArrayList<Candidato>();
-        GestionDato gD = new GestionDato(candidato);
+        List<Eleccion> eleccion = new ArrayList<Eleccion>();
+        GestionDato gD = new GestionDato(candidato,eleccion);
         VentanaPrincipal VentPri = new VentanaPrincipal (gD);// TODO code application logic here
     }
     
